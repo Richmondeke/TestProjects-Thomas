@@ -353,101 +353,204 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ],
                         ),
-                      Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Expanded(
-                            child: Container(
-                              width: 100.0,
-                              height: 67.0,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                              ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    width: 160.0,
-                                    height: 40.0,
-                                    decoration: BoxDecoration(
-                                      color: Color(0xFF319795),
-                                      borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(12.0),
-                                        bottomRight: Radius.circular(0.0),
-                                        topLeft: Radius.circular(12.0),
-                                        topRight: Radius.circular(0.0),
-                                      ),
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          'Arbeitnehmer',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium,
+                      if (responsiveVisibility(
+                        context: context,
+                        phone: false,
+                      ))
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Expanded(
+                              child: Container(
+                                width: 100.0,
+                                height: 67.0,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 160.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFF319795),
+                                        borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(12.0),
+                                          bottomRight: Radius.circular(0.0),
+                                          topLeft: Radius.circular(12.0),
+                                          topRight: Radius.circular(0.0),
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 160.0,
-                                    height: 40.0,
-                                    decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryText,
+                                      ),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            'Arbeitnehmer',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          'Arbeitgeber',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium,
+                                    Container(
+                                      width: 160.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
                                         ),
-                                      ],
-                                    ),
-                                  ),
-                                  Container(
-                                    width: 160.0,
-                                    height: 40.0,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.only(
-                                        bottomLeft: Radius.circular(0.0),
-                                        bottomRight: Radius.circular(12.0),
-                                        topLeft: Radius.circular(0.0),
-                                        topRight: Radius.circular(12.0),
                                       ),
-                                      border: Border.all(
-                                        color: FlutterFlowTheme.of(context)
-                                            .secondaryText,
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            'Arbeitgeber',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          'Temporärbüro',
-                                          style: FlutterFlowTheme.of(context)
-                                              .bodyMedium,
+                                    Container(
+                                      width: 160.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(0.0),
+                                          bottomRight: Radius.circular(12.0),
+                                          topLeft: Radius.circular(0.0),
+                                          topRight: Radius.circular(12.0),
                                         ),
-                                      ],
+                                        border: Border.all(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
+                                        ),
+                                      ),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            'Temporärbüro',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
+                                          ),
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
+                          ],
+                        ),
+                      if (responsiveVisibility(
+                        context: context,
+                        desktop: false,
+                      ))
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Expanded(
+                              child: Container(
+                                width: 100.0,
+                                height: 67.0,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                ),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 120.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFF319795),
+                                        borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(12.0),
+                                          bottomRight: Radius.circular(0.0),
+                                          topLeft: Radius.circular(12.0),
+                                          topRight: Radius.circular(0.0),
+                                        ),
+                                      ),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            'Arbeitnehmer',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      width: 120.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
+                                        ),
+                                      ),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            'Arbeitgeber',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      width: 120.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.only(
+                                          bottomLeft: Radius.circular(0.0),
+                                          bottomRight: Radius.circular(12.0),
+                                          topLeft: Radius.circular(0.0),
+                                          topRight: Radius.circular(12.0),
+                                        ),
+                                        border: Border.all(
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
+                                        ),
+                                      ),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            'Temporärbüro',
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
