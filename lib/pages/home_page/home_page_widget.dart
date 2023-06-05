@@ -92,7 +92,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     children: [
                                       Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 16.0, 0.0),
+                                            0.0, 0.0, 20.0, 0.0),
                                         child: Text(
                                           'Login',
                                           style: FlutterFlowTheme.of(context)
