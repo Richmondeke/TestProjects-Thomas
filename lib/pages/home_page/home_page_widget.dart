@@ -337,8 +337,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           ClipRRect(
                                             borderRadius:
                                                 BorderRadius.circular(8.0),
-                                            child: Image.asset(
-                                              'assets/images/17a18ffd-ea16-4667-b68b-39cda670125c.png',
+                                            child: SvgPicture.asset(
+                                              'assets/images/undraw_agreement_aajr.svg',
                                               width: 300.0,
                                               height: 200.0,
                                               fit: BoxFit.cover,
